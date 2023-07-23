@@ -3,7 +3,7 @@ import { useState, useContext } from 'react';
 import { MoreVert } from '@mui/icons-material';
 import { Menu, MenuItem, styled } from '@mui/material';
 
-import { GoogleLogout } from 'react-google-login';
+import { googleLogout } from '@react-oauth/google';
 import { AccountContext } from '../../../context/AccountProvider';
 import { UserContext } from '../../../context/UserProvider';
 
@@ -18,9 +18,10 @@ const MenuOption = styled(MenuItem)`
     color: #4A4A4A;
 `;
 
-// const Logout = styled(GoogleLogout)`
-   
-// `;
+const Logout = styled(googleLogout)`
+   box-shadow:none
+   border:none
+`;
 
 const HeaderMenu = () => {
     
@@ -77,14 +78,14 @@ const HeaderMenu = () => {
             >
                 <MenuOption onClick={() => { handleClose(); toggleDrawer()}}>Profile</MenuOption>
                 <MenuOption onClick={() => { handleClose(); }}>
-                { showlogoutButton ?
-                    <GoogleLogout
+                {/* { showlogoutButton ?
+                    <Logout
                         clientId={clientId}
                         buttonText="Logout"
                         onLogoutSuccess={onSignoutSuccess}
                     >
-                    </GoogleLogout> : null
-                }
+                    </Logout>: null
+                } */}
                 </MenuOption>
             </Menu>
             <InfoDrawer open={openDrawer} setOpen={setOpenDrawer} profile={true} />

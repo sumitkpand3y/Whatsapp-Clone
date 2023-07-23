@@ -15,14 +15,15 @@ const Header = styled(Box)`
 `;
     
 const Image = styled('img')({
-    width: 40,
-    height: 40,
+    width: 35,
+    height: 35,
     objectFit: 'cover',
     borderRadius: '50%'
 })
 
 const Name = styled(Typography)`
     margin-left: 12px !important;
+    font-size:14px !important;
 `;
 
 const RightContainer = styled(Box)`

@@ -29,7 +29,7 @@ const Component = styled(Box)`
 `;
 
 const Container = styled(Box)`
-    padding: 1px 80px;
+    padding: 13px 60px;
 `;
 
 

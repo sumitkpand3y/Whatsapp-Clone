@@ -29,7 +29,7 @@ const dialogStyle = {
     margin: '20px',
     maxWidth: '100%',
     maxHeight: '100%',
-    borderRadius: 0,
+    borderRadius: 1,
     boxShadow: 'none',
     overflow: 'hidden'
 };

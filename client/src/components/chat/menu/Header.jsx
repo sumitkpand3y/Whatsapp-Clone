@@ -32,9 +32,10 @@ const Wrapper = styled(Box) `
 `;
     
 const Image = styled('img') ({
-    height: 40,
-    width: 40,
-    borderRadius: '50%'
+    height: 35,
+    width: 35,
+    borderRadius: '50%',
+    cursor:'pointer'
 })
 
 const Header = () => {
